@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'next_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -32,7 +33,8 @@ class HomeScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => NextScreen(inputText: inputText.text,
+        builder: (context) => NextScreen(
+          inputText: inputText.text,
         ),
       ),
     );
