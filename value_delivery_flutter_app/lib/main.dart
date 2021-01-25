@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+
 import 'home_screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApp()); // MyAppはルートウィジェット
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // StatelessWidgetはBuild()メソッドの実装が必須
     return MaterialApp(
+      // MaterialAppはMyAppをコンポジット
       debugShowCheckedModeBanner: false,
       title: "ホーム画面",
       home: HomeScreen(),
